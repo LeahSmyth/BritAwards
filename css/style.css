@@ -1,0 +1,83 @@
+* {
+	padding:0em;
+	margin:0;
+	font-size:100%;
+	line-height:1em;}
+
+h2{font-family:'Abel',sans-serif;
+    font-size:4em;
+    text-align:center;
+    padding:0 0 1em 0;}
+
+p{font-family:'Abel',sans-serif;}
+
+.year{font-weight:900;
+    font-size:2em;
+    padding:.9em 0 .5em 0;}
+
+.designer{font-size:1.3em;}
+
+/*---Images---*/
+
+.logo{padding:1em 0em 0em 1em;}
+
+.awards-by-year{
+    padding-left:2.5%;
+    padding-right:2.5%;
+    width:92%;}
+
+.awards{height:45em;} 
+
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:1em 0em 1em 0em;
+  text-align:center;
+}
+
+ul li {
+  display:inline-block;
+  position:relative;}
+
+.zoom {transition: transform .2s;}
+
+.zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+.artist-info{font-size:1.7em;
+            line-height:1.5em;
+            padding:2em 0em 1em 20%;}
+
+.artist-page-image{float:right; height:47em; padding:0em 20% 3em 0;}
+
+/*---Footer---*/
+
+footer{position:fixed;
+    font-family:'Abel',sans-serif;
+    bottom:0;
+    font-size:1em;
+	color:#db3216;
+    text-align:right;
+	margin-top:2em;;
+	width:100%;
+	background:rgba(255, 255, 255, .1);
+	text-decoration:none;}
+
+.leah-link{padding:1.5em 0 1.1em 0;}
+
+.leah-link a{color:#000000; text-decoration:none;padding-right:2%;}
+
+.leah-link a:hover{color:#db3216;}
+
+/*----MEDIA QUERIES-----*/
+
+/*---TABLET---*/
+
+@media (max-width:979px) {}
+	
+/*---SMARTPHONE---*/
+
+@media (max-width:414px) {}
