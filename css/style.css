@@ -4,80 +4,133 @@
 	font-size:100%;
 	line-height:1em;}
 
-h2{font-family:'Abel',sans-serif;
+body{min-height:100%;}
+
+/*---Nav---*/
+
+.logo{padding:1em 0em 1em 1em;width:6em;}
+
+nav{ position:fixed; z-index:2;}
+
+/*---Main Images---*/
+
+#home-page-awards{margin:0 10% 0 10%; padding-top:10%;}
+
+#award-list{list-style-type:none; padding:1em 0em 1em 0em;}
+
+#award-list-item{display:inline-block; position:relative;}
+
+.awards{height:40em;} 
+
+.zoom {transition:transform .2s;}
+
+.zoom:hover {
+    -ms-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1); }
+
+/*---Individual Pages---*/
+
+#year-page{margin:0 20% 0 20%; padding-top:10%;}
+
+h2{font-family: 'Lora', serif;
     font-size:4em;
     text-align:center;
     padding:0 0 1em 0;}
 
-p{font-family:'Abel',sans-serif;}
+p{  font-family: 'Lora', serif;
+    padding:1.3em 15% 1.3em 15%;
+	line-height:1.5em;
+	font-size:100%;
+	color:#666666;}
 
-.year{font-weight:900;
-    font-size:2em;
-    padding:.9em 0 .5em 0;}
+.artist-name{font-weight:bolder;
+    padding:1.3em 10% 0 20%;
+	line-height:1.5em;
+	font-size:130%;
+	color:#666666;}
 
-.designer{font-size:1.3em;}
+.artist-info{font-family: 'Lora', serif;
+    padding:1.3em 10% 0 20%;
+	line-height:1.5em;
+	font-size:100%;
+	color:#666666;}
 
-/*---Images---*/
+#about{padding-bottom:3%;}
 
-.logo{padding:1em 0em 0em 1em;}
+.clearfix::after {
+  content:"";
+  clear:both;
+  display:table;}
 
-.awards-by-year{
-    padding-left:2.5%;
-    padding-right:2.5%;
-    width:92%;}
-
-.awards{height:45em;} 
-
-ul {
-  list-style-type:none;
-  margin:0;
-  padding:1em 0em 1em 0em;
-  text-align:center;
-}
-
-ul li {
-  display:inline-block;
-  position:relative;}
-
-.zoom {transition: transform .2s;}
-
-.zoom:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
-}
-
-.artist-info{font-size:1.7em;
-            line-height:1.5em;
-            padding:2em 0em 1em 20%;}
-
-.artist-page-image{float:right; height:47em; padding:0em 20% 3em 0;}
+.artist-page-image{float:left; height:35em; padding:1% 5% 10% 10%;}
 
 /*---Footer---*/
 
-footer{position:fixed;
-    font-family:'Abel',sans-serif;
-    bottom:0;
-    font-size:1em;
-	color:#db3216;
-    text-align:right;
-	margin-top:2em;;
+.footer-line{width:90%; margin:5% 0 1% 5%; border:1px solid #000000;}
+
+footer{font-size:.7em;
+	text-align:center;
+	left:0;
+	margin:0;
 	width:100%;
-	background:rgba(255, 255, 255, .1);
-	text-decoration:none;}
+    clear:both;
+    position:relative;}
 
-.leah-link{padding:1.5em 0 1.1em 0;}
+.footer-link{color:#666666; font-family:'Lora',serif; padding-top:1.1em;}
 
-.leah-link a{color:#000000; text-decoration:none;padding-right:2%;}
+.footer-link a{color:#000000; text-decoration:none;}
 
-.leah-link a:hover{color:#db3216;}
+.bottom-section{bottom:0; width:100%; margin-bottom:3%;}
 
 /*----MEDIA QUERIES-----*/
 
 /*---TABLET---*/
 
-@media (max-width:979px) {}
+@media (max-width:979px) {
+
+.awards{height:23em;} 
+
+#year-page{margin:0 5% 0 5%; padding-top:17%;}
+
+.artist-name{font-size:120%;}
+
+.artist-info{font-size:90%;}
+    
+.artist-page-image{float:left; height:30em; padding:1% 5% 10% 10%;}
+
+}
 	
 /*---SMARTPHONE---*/
 
-@media (max-width:414px) {}
+@media (max-width:414px) {
+
+/*---Nav---*/
+
+.logo{width:4em;}
+
+/*---Main Images---*/
+
+#home-page-awards{margin:0 5% 0 5%; padding:1em 2em 0em 2em;}
+
+.awards{height:20em; padding-bottom:1em;} 
+
+/*---Individual Pages---*/
+
+#year-page{margin:0 2% 0 2%; padding-top:30%;}
+
+h2{font-size:3em; padding:0 0 0.2em 0;}
+
+.artist-name{text-align:center; padding:1em 20% 0 20%; font-size:120%;}
+
+.artist-info{padding:1.3em 10% 0 10%; font-size:80%;}
+
+.artist-page-image{width:80%; padding:1% 10% 10% 10%;}
+
+/*---Footer---*/
+
+.footer-line{border:.5px solid #000000;}
+
+footer{font-size:.5em;}
+
+}
